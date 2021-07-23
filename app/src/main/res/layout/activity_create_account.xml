@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/padding_main"
+    tools:context=".activities.CreateAccountActivity">
+
+    <ImageButton
+        android:id="@+id/ibBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon_height_37"
+        android:background="@null"
+        android:backgroundTint="@color/transparent"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_left_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/create_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibBackArrow" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/sign_in"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/subtitle_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:height="60dp"
+        android:background="@drawable/input_background_dark"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="@dimen/drawablePadding_16"
+        android:ems="10"
+        android:hint="@string/hint_full_name"
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/drawablePadding_16"
+        android:paddingEnd="@dimen/drawablePadding_16"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="60dp"
+        android:background="@drawable/input_background_dark"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="@dimen/drawablePadding_16"
+        android:ems="10"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:paddingStart="@dimen/drawablePadding_16"
+        android:paddingEnd="@dimen/drawablePadding_16"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFullName" />
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="60dp"
+        android:background="@drawable/input_background_dark"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="@dimen/drawablePadding_16"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/drawablePadding_16"
+        android:paddingEnd="@dimen/drawablePadding_16"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="60dp"
+        android:background="@drawable/input_background_dark"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/drawablePadding_16"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/drawablePadding_16"
+        android:paddingEnd="@dimen/drawablePadding_16"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMail" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/roboto_bold"
+        android:padding="0dp"
+        android:text="@string/create"
+        android:textSize="@dimen/button_login"
+        app:cornerRadius="@dimen/corner_radius_button_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/sign_up"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

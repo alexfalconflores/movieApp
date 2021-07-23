@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_main">30dp</dimen>
+    <dimen name="title_40">40sp</dimen>
+    <dimen name="subtitle_16">16sp</dimen>
+    <dimen name="drawablePadding_16">16dp</dimen>
+    <dimen name="button_login">24dp</dimen>
+    <dimen name="corner_radius_button_16">16dp</dimen>
+    <dimen name="sign_up">20sp</dimen>
+    <dimen name="icon_height_37">37dp</dimen>
+</resources>
